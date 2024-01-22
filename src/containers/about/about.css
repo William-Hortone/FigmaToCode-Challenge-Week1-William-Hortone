@@ -1,0 +1,68 @@
+.app__about {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fbfc;
+}
+.app__about-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.75rem;
+  background-color: var(--color-white);
+}
+.app__about-img {
+  /* width: 250px;
+  height: 100px; */
+  /* flex: 1; */
+  /* background-image: url("../../assets/plusicons.png"); */
+  position: relative;
+  /* background-size: cover; */
+}
+/* .img-plus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  aspect-ratio: 1/1;
+  background-image: url("../../assets/plusicons.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.app__about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
+  /* width: 50%; */
+}
+
+.app__about-content h4 {
+  /* ! need to add shadow */
+  color: var(--color-secondary);
+  font-family: var(--font-alt);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.0275rem;
+}
+
+.app__about-content h2 {
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.app__about-content p {
+  color: var(--color-extra);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}

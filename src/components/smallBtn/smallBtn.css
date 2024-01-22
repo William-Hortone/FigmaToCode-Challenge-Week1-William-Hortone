@@ -4,7 +4,9 @@
   justify-content: center;
   gap: 0.625rem;
   background-color: var(--color-primary);
-  border-radius: 25px;
+  border-radius: 6.25rem;
+  background: linear-gradient(96deg, #3a8ef6 -10.84%, #6f3afa 196.74%);
+  box-shadow: 0px 8px 23px 0px rgba(65, 132, 247, 0.24);
   border: none;
   outline: none;
   cursor: pointer;

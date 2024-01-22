@@ -10,6 +10,10 @@ import ellipse from "../assets/Ellipse.png";
 import messageCircle from "../assets/message-circle.png";
 import imgDoc from "../assets/Object.png";
 import medicalSymbol from "../assets/Medical Symbol.png";
+import whatsapp from "../assets/whatsapp.png";
+import whatsapp2 from "../assets/whatsapp2.png";
+import plusicons from "../assets/plusicons.png";
+import Visual from "../assets/Visual.png";
 
 export default {
   doctorsImg,
@@ -24,4 +28,8 @@ export default {
   messageCircle,
   imgDoc,
   medicalSymbol,
+  whatsapp,
+  whatsapp2,
+  plusicons,
+  Visual,
 };

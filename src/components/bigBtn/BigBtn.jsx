@@ -1,15 +1,9 @@
 import React from "react";
 import "./bigBtn.css";
 
-const BigBtn = ({ paddingBlock, paddingInline, img, text, title }) => {
+const BigBtn = ({ img, text, title }) => {
   return (
-    <button
-      className="app__bigBtn"
-      style={{
-        paddingBlock: `${paddingBlock}`,
-        paddingInline: `${paddingInline}`,
-      }}
-    >
+    <button className="app__bigBtn">
       <img src={img} alt="icon" />
       <div>
         <h3>{title}</h3>

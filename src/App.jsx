@@ -1,11 +1,12 @@
 import "./App.css";
-import { Header } from "./containers";
+import { About, Header, Services } from "./containers";
 
 function App() {
   return (
     <div>
-      {/* <div>William Hortone</div>/ */}
       <Header />
+      <About />
+      <Services />
     </div>
   );
 }
