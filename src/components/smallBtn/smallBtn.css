@@ -1,0 +1,16 @@
+.app__smallBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  background-color: var(--color-primary);
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.app__smallBtn p {
+  font-family: var(--font-alt);
+  color: white !important;
+  font-weight: 900 !important;
+}

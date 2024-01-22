@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sora:wght@500&display=swap"); */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sora:wght@200;500&display=swap");
 
 :root {
   --font-base: "Poppins", sans-serif;
-  --font-alt: "Open Sans", sans-serif;
-  --color-primary: #3A8EF6;
-  --color-secondary: #00BFA5;
-  --color-background: #F2F7FF;
-  --color-white: #ffffff;
+  --font-alt: "Sora", sans-serif;
+  --color-primary: #3a8ef6;
+  --color-secondary: #00bfa5;
+  --color-extra: #6c87ae;
+  --color-background: #f2f7ff;
+  --color-white: #ffff;
   --color-black: #031432;
 }
 body {
-
-  background-color: var(--color-background);
+  background-color: var(--color-white);
 }
 * {
   box-sizing: border-box;
@@ -20,9 +22,10 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
-
+li {
+  list-style-type: none;
+}
 a {
   color: unset;
   text-decoration: none;
 }
-

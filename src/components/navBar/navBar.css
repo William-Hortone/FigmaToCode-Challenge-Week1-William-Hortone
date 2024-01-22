@@ -1,0 +1,46 @@
+.app__navBar {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 11.59rem;
+}
+.title {
+  position: relative;
+}
+.title h2 {
+  font-family: var(--font-alt);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-primary);
+}
+.title span {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-image: url("../../assets/plus-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.app__navBar-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2.5rem;
+}
+.app__navBar-links a {
+  color: var(--color-extra);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.active {
+  font-weight: 900 !important;
+}

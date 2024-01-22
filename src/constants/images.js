@@ -8,8 +8,9 @@ import image2 from "../assets/image2.png";
 import checkCircle from "../assets/check-circle.png";
 import ellipse from "../assets/Ellipse.png";
 import messageCircle from "../assets/message-circle.png";
+import imgDoc from "../assets/Object.png";
 
-export {
+export default {
   doctorsImg,
   plusIcon,
   plusImg,
@@ -20,4 +21,5 @@ export {
   checkCircle,
   ellipse,
   messageCircle,
+  imgDoc,
 };
