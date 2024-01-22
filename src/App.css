@@ -2,73 +2,16 @@
   padding: 6rem 11.5rem;
 }
 
-.custom__button {
-  background-color: var(--color-orange);
-  color: var(--color-white);
-  font-family: var(--font-base);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 16px;
-  padding: 0.5rem 1.5rem;
-  border-radius: 1px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.custom__btn {
-  background: transparent;
-  color: var(--color-white);
-  font-family: var(--font-base);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 16px;
-  padding: 0.5rem 1.5rem;
-  border-radius: 1px;
-  border: 1px solid transparent;
-  outline: none;
-  cursor: pointer;
-}
-.custom__button:hover {
-  color: var(--color-white);
-  background: var(--color-light-blue);
-}
-.custom__btn:hover {
-  color: var(--color-white);
-  border: 1px solid var(--color-orange);
-}
-
-.p__cormorant {
-  font-family: var(--font-base);
-  color: var(--color-white);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  font-feature-settings: "tnum" on, "lnum" on;
-  line-height: 29.9px;
-  font-size: 23px;
-}
-
-.p__opensans {
-  font-family: var(--font-alt);
-  color: var(--color-white);
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  line-height: 28px;
-  font-size: 16px;
-}
-
-@media screen and (min-width: 2000px) {
-  .custom__button,
-  .p__cormorant {
-    font-size: 37px;
-    line-height: 67px;
+/* @media screen and (min-width: 1350px) {
+  .section__padding {
+    padding: 6rem 9.5rem;
+    background-color: aqua;
   }
-  .p__opensans {
-    font-size: 30px;
-    line-height: 50px;
+} */
+@media screen and (max-width: 1840px) {
+  .section__padding {
+    padding: 6rem 11.5rem;
+    background-color: aqua;
   }
 }
 @media screen and (max-width: 850px) {

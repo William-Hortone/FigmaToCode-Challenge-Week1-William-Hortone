@@ -1,5 +1,6 @@
 .app__smallBtn {
   display: flex;
+  /* width: 17.625rem; */
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
@@ -14,5 +15,8 @@
 .app__smallBtn p {
   font-family: var(--font-alt);
   color: white !important;
-  font-weight: 900 !important;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }

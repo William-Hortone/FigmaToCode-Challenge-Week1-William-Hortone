@@ -1,5 +1,5 @@
 import React from "react";
-import { SmallBtn } from "../../components";
+import { Card, SmallBtn } from "../../components";
 import { images } from "../../constants";
 import "./services.css";
 
@@ -27,7 +27,14 @@ const Services = () => {
           <img src={images.Visual} alt="" />
         </div>
       </div>
-      <div className="app__services-container"></div>
+      <div className="app__services-container">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 };

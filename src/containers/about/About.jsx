@@ -13,9 +13,7 @@ const About = () => {
         </div>
         <div className="app__about-content">
           <h4>About me</h4>
-          <h2>
-            A dedicated doctor with the <br /> core mission to help
-          </h2>
+          <h2>A dedicated doctor with the core mission to help</h2>
           <p>
             orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin
             nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis
