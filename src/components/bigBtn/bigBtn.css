@@ -1,0 +1,35 @@
+.app__bigBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: var(--color-primary);
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.125rem;
+}
+.app__bigBtn div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.app__bigBtn h3 {
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 1.125rem;
+  text-align: start;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.app__bigBtn p {
+  font-family: var(--font-alt);
+  color: #fff;
+  text-align: start;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 140%;
+}

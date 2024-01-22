@@ -1,9 +1,12 @@
 import React from "react";
-import { NavBar, SmallBtn } from "../../components";
+import { BigBtn, NavBar, SmallBtn } from "../../components";
 import "./header.css";
 import { images } from "../../constants";
 
 const Header = () => {
+  const text1 = "Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit.";
+  const text2 =
+    "Lorem ipsum dolor sit amet , con <br /> sectetur adipiscing elit.";
   return (
     <div className="app__header">
       <NavBar />
@@ -27,6 +30,24 @@ const Header = () => {
         <div className="app__header-wrapper-image">
           <img src={images.imgDoc} alt="doctor photo" />
         </div>
+      </div>
+
+      <div className="app__header-container">
+        <BigBtn
+          img={images.clockIcon}
+          text={<div dangerouslySetInnerHTML={{ __html: text1 }} />}
+          title="24 hour service"
+        />
+        <BigBtn
+          img={images.checkCircle}
+          text={<div dangerouslySetInnerHTML={{ __html: text2 }} />}
+          title="8 years of experience"
+        />
+        <BigBtn
+          img={images.medicalSymbol}
+          text={<div dangerouslySetInnerHTML={{ __html: text1 }} />}
+          title="High quality care"
+        />
       </div>
     </div>
   );

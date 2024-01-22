@@ -9,6 +9,7 @@ import checkCircle from "../assets/check-circle.png";
 import ellipse from "../assets/Ellipse.png";
 import messageCircle from "../assets/message-circle.png";
 import imgDoc from "../assets/Object.png";
+import medicalSymbol from "../assets/Medical Symbol.png";
 
 export default {
   doctorsImg,
@@ -22,4 +23,5 @@ export default {
   ellipse,
   messageCircle,
   imgDoc,
+  medicalSymbol,
 };
