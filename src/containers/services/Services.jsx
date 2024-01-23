@@ -28,12 +28,36 @@ const Services = () => {
         </div>
       </div>
       <div className="app__services-container">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          title="General"
+          img={images.docTool}
+          text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+        />
+        <Card
+          title="Pediatrics"
+          img={images.newDoctor}
+          text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+        />
+        <Card
+          title="Nutritional"
+          img={images.image1}
+          text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+        />
+        <Card
+          title="Cardiology"
+          img={images.healthy}
+          text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+        />
+        <Card
+          title="Ophthalmology"
+          img={images.image3}
+          text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+        />
+        <Card
+          title="Orthopedics"
+          img={images.ambulance}
+          text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+        />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import clockIcon from "../assets/clock.png";
 import docTool from "../assets/semiologia.png";
 import image1 from "../assets/image1.png";
 import image2 from "../assets/image2.png";
+import image3 from "../assets/Ciencias .png";
 import checkCircle from "../assets/check-circle.png";
 import ellipse from "../assets/Ellipse.png";
 import messageCircle from "../assets/message-circle.png";
@@ -14,6 +15,9 @@ import whatsapp from "../assets/whatsapp.png";
 import whatsapp2 from "../assets/whatsapp2.png";
 import plusicons from "../assets/plusicons.png";
 import Visual from "../assets/Visual.png";
+import ambulance from "../assets/ambulance.png";
+import healthy from "../assets/healthy.png";
+import newDoctor from "../assets/newDoc.png";
 
 export default {
   doctorsImg,
@@ -23,6 +27,7 @@ export default {
   docTool,
   image1,
   image2,
+  image3,
   checkCircle,
   ellipse,
   messageCircle,
@@ -32,4 +37,7 @@ export default {
   whatsapp2,
   plusicons,
   Visual,
+  ambulance,
+  healthy,
+  newDoctor,
 };
