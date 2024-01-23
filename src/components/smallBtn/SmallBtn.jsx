@@ -1,7 +1,14 @@
 import React from "react";
 import "./smallBtn.css";
 
-const SmallBtn = ({ img, text, paddingBlock, paddingInline, width }) => {
+const SmallBtn = ({
+  img,
+  text,
+  paddingBlock,
+  paddingInline,
+  width,
+  fontSize,
+}) => {
   return (
     <button
       className="app__smallBtn"
@@ -12,7 +19,7 @@ const SmallBtn = ({ img, text, paddingBlock, paddingInline, width }) => {
       }}
     >
       <img src={img} alt="icon" />
-      <p>{text}</p>
+      <p style={{ fontSize: `${fontSize}` }}>{text}</p>
     </button>
   );
 };

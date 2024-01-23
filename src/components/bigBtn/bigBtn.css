@@ -36,3 +36,18 @@
   font-weight: 100;
   line-height: 140%;
 }
+
+@media screen and (max-width: 550px) {
+  .app__bigBtn img {
+    width: 1.3125rem;
+    height: 1.25rem;
+    object-fit: cover;
+  }
+  .app__bigBtn h3 {
+    text-align: center;
+    font-size: 0.9375rem;
+  }
+  .app__bigBtn p {
+    font-size: 0.625rem;
+  }
+}

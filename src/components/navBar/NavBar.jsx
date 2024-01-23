@@ -2,6 +2,7 @@ import React from "react";
 import "./navBar.css";
 import SmallBtn from "../smallBtn/SmallBtn";
 import { images } from "../../constants";
+import { FaBars } from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -26,12 +27,17 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="app__navBar-wrapper">
-        <SmallBtn
-          text="Book Now"
-          img={images.messageCircle}
-          paddingBlock="1rem"
-          paddingInline="1.75rem"
-        />
+        <FaBars size={24} color="#3a8ef6" className="burgerBtn" />
+
+        <div className="content-btn">
+          <SmallBtn
+            text="Book Now"
+            img={images.messageCircle}
+            paddingBlock="1rem"
+            paddingInline="1.75rem"
+            fontSize="1.125rem"
+          />
+        </div>
       </div>
     </nav>
   );

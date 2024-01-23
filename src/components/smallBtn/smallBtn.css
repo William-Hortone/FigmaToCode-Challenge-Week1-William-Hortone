@@ -14,9 +14,19 @@
 }
 .app__smallBtn p {
   font-family: var(--font-alt);
-  color: white !important;
-  font-size: 1.125rem;
+  color: white;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+@media screen and (max-width: 1450px) {
+  .app__smallBtn p {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .app__smallBtn p {
+    font-size: 0.875rem !important;
+  }
 }

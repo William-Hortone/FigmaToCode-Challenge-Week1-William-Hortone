@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 11.59rem;
+  padding: 2rem 10.59rem;
 }
 .title {
   position: relative;
@@ -47,4 +47,46 @@
 }
 .active {
   font-weight: 900 !important;
+}
+.app__navBar-wrapper {
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.burgerBtn {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .app__navBar {
+    padding: 2rem 6rem;
+  }
+  .title h2 {
+    font-size: 1.51019rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .app__navBar {
+    padding: 2rem 5rem;
+  }
+  .burgerBtn {
+    display: block;
+    cursor: pointer;
+  }
+  .content-btn,
+  .app__navBar-links {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .app__navBar {
+    padding: 1rem 2rem;
+  }
+  .title span {
+    top: -10px;
+    right: -26px;
+    width: 2.13263rem;
+    height: 2.13263rem;
+  }
 }
