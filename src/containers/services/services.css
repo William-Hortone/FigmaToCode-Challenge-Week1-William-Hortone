@@ -5,6 +5,7 @@
   flex-direction: column;
   background-color: var(--color-background);
   box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+  overflow-x: hidden;
 }
 .app__services-header {
   width: 100%;
@@ -22,7 +23,6 @@
 }
 
 .app__services-header-content h4 {
-  /* ! need to add shadow */
   color: var(--color-secondary);
   font-family: var(--font-alt);
   font-size: 1.375rem;
@@ -68,4 +68,67 @@
   /* flex-direction: column; */
   align-items: flex-start;
   gap: 2.25rem;
+}
+.responsive-card {
+  width: calc(100% - 1rem);
+  margin-right: 1rem;
+  /* background-color: red; */
+}
+.container-carousel {
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  .app__services-header {
+    height: auto;
+    padding: 4rem 0;
+  }
+  .app__services-header-content h2 {
+    font-size: 1.75rem;
+  }
+  .app__services-header-content {
+    gap: 0.75rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .app__services-header {
+    flex-direction: column-reverse;
+    padding: 0;
+    /* align-items: center; */
+    /* gap: 1.5rem; */
+  }
+  .app__services-header-img {
+    /* flex: 1; */
+    width: 60%;
+    /* aspect-ratio: 1/1; */
+  }
+  .app__services-header-content {
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .app__services-header-content h4,
+  .app__services-header-content h2 {
+    align-self: flex-start;
+  }
+  .container-carousel {
+    display: flex;
+    margin-top: 4rem;
+  }
+  .app__services-container {
+    display: none;
+  }
+  .responsive-card {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container-carousel {
+    display: flex;
+    margin-top: 4rem;
+  }
+  .app__services-header-content h2 {
+    font-size: 1.3rem;
+  }
+  .app__services-header-content {
+    gap: 1rem;
+  }
 }

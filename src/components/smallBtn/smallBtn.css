@@ -14,7 +14,7 @@
 }
 .app__smallBtn p {
   font-family: var(--font-alt);
-  color: white;
+  color: white !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;

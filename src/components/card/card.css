@@ -39,3 +39,29 @@
   font-weight: 400;
   line-height: 1.25rem;
 }
+@media screen and (max-width: 1250px) {
+  .app__card {
+    width: 21.625rem;
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app__card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .app__card {
+    width: 100%;
+    padding: 1rem;
+    /* overflow: hidden; */
+  }
+  .app__card p {
+    color: var(--color-extra);
+    font-family: var(--font-alt);
+    font-size: 0.775rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+}

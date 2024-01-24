@@ -37,7 +37,7 @@
   line-height: 140%;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1060px) {
   .app__bigBtn img {
     width: 1.3125rem;
     height: 1.25rem;

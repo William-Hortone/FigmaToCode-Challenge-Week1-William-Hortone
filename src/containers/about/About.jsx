@@ -8,8 +8,8 @@ const About = () => {
     <div className="app__about section__padding">
       <div className="app__about-wrapper">
         <div className="app__about-img">
-          <img src={images.doctorsImg} alt="" />
-          <div className="img-plus"></div>
+          <img src={images.doctorsImg} alt="doctor photo" />
+          {/* <div className="img-plus"></div> */}
         </div>
         <div className="app__about-content">
           <h4>About me</h4>

@@ -9,7 +9,8 @@ const Card = ({ title, text, img }) => {
       <div className="app__card-img">
         <img src={img} alt="" />
       </div>
-      <div style={{ width: "17.625rem" }}>
+      <div>
+        {/* <div style={{ width: "17.625rem" }}> */}
         <h4>{title}</h4>
         <p className="card-text">{text}</p>
       </div>
