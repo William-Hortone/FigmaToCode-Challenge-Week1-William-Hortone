@@ -34,7 +34,6 @@
   padding: 4rem 6.2rem;
   border-radius: 2rem;
   margin-top: 1rem;
-
   background: var(
     --gradients,
     linear-gradient(145deg, #1678f2 3.73%, #65a8fb 132.69%)
@@ -74,7 +73,6 @@
   outline: none;
   cursor: pointer;
 }
-
 .appointment__smallBtn p {
   font-family: var(--font-alt);
   color: var(--color-primary) !important;
@@ -83,7 +81,6 @@
   font-weight: 900;
   line-height: normal;
 }
-
 .app__appointment-doctor {
   display: flex;
   flex-direction: column;
@@ -123,7 +120,6 @@
   height: 4rem;
   object-fit: cover;
 }
-
 .app__appointment-doctor h2 {
   color: var(--color-black);
   font-family: var(--font-base);
@@ -166,7 +162,6 @@
   border: none;
   outline: none;
 }
-
 .appointment__bigBtn h3 {
   color: var(--color-white);
   font-family: var(--font-base);
@@ -176,7 +171,6 @@
   font-weight: 600;
   line-height: normal;
 }
-
 @media screen and (max-width: 1450px) {
   .appointment__smallBtn p {
     font-size: 0.875rem;

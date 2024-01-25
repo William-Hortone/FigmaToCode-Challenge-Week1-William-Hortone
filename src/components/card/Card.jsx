@@ -10,7 +10,6 @@ const Card = ({ title, text, img }) => {
         <img src={img} alt="" />
       </div>
       <div>
-        {/* <div style={{ width: "17.625rem" }}> */}
         <h4>{title}</h4>
         <p className="card-text">{text}</p>
       </div>

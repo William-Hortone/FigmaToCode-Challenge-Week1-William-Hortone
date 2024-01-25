@@ -9,6 +9,7 @@ const About = () => {
       <div className="app__about-wrapper">
         <div className="app__about-img">
           <img src={images.doctorsImg} alt="doctor photo" />
+          {/* plus icons  */}
           <Plus
             top="6rem"
             left="-3rem"

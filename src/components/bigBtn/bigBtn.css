@@ -36,7 +36,6 @@
   font-weight: 100;
   line-height: 140%;
 }
-
 @media screen and (max-width: 1060px) {
   .app__bigBtn img {
     width: 1.3125rem;
