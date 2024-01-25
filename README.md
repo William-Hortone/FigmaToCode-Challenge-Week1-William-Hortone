@@ -2,7 +2,7 @@
 
 ##  This project is a challenge launched on LinkedIn and Twitter involving various frontend developers. The goal is to integrate 5 different Figma designs. This is the first design.
 
-### Want to see wwhat I did ? https://william-hortone.netlify.app/
+### Want to see what I did ? https://william-hortone.netlify.app/
 
 ### Want to run the code ?
   Clone and run npm install
