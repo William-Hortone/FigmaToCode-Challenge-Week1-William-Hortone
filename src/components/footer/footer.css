@@ -90,7 +90,6 @@
   line-height: normal;
   opacity: 0.8;
 }
-
 @media screen and (max-width: 1250px) {
   .app__footer {
     padding: 4rem 5rem 3rem 5rem;
@@ -119,7 +118,10 @@
 }
 @media screen and (max-width: 550px) {
   .app__footer {
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 2rem;
+  }
+  .app__footer-wrapper {
+    gap: 1rem;
   }
   .app__footer .title h2 {
     font-size: 1.5rem;
@@ -133,5 +135,8 @@
     right: -35px;
     width: 3rem;
     height: 3rem;
+  }
+  .divider {
+    margin: 1rem 0;
   }
 }
