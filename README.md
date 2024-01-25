@@ -1,8 +1,10 @@
-# React + Vite
+# Hello there😊 ,
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  This project is a challenge launched on LinkedIn and Twitter involving various frontend developers. The goal is to integrate 5 different Figma designs. This is the first design.
 
-Currently, two official plugins are available:
+### Want to see wwhat I did ? https://william-hortone.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Want to run the code ?
+  Clone and run npm install
+
+![Screenshot (673)](https://github.com/William-Hortone/FigmaToCode-Challenge-Week1-William-Hortone/assets/101454117/5949d423-40a1-47ae-91c6-1b30a71f0d67)
