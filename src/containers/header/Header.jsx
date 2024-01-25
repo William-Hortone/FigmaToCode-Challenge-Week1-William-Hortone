@@ -1,14 +1,15 @@
 import React from "react";
 import { BigBtn, NavBar, SmallBtn } from "../../components";
-import "./header.css";
 import { images } from "../../constants";
+import "./header.css";
 
 const Header = () => {
+  // text for the  buttons
   const text1 = "Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit.";
   const text2 =
     "Lorem ipsum dolor sit amet , con <br /> sectetur adipiscing elit.";
   return (
-    <div className="app__header">
+    <section className="app__header">
       <NavBar />
       <div className="app__header-wrapper">
         <div className="app__header-wrapper-text">
@@ -49,7 +50,7 @@ const Header = () => {
           title="High quality care"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

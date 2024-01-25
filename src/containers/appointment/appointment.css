@@ -1,0 +1,284 @@
+.app__appointment {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding-top: 8rem;
+  margin-bottom: 4rem;
+}
+.app__appointment-container-schedule {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app__appointment-container-schedule h4,
+.app__appointment-doctor h4 {
+  color: var(--color-secondary);
+  font-family: var(--font-alt);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.0275rem;
+}
+.wrapper-schedule {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 6.2rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+
+  background: var(
+    --gradients,
+    linear-gradient(145deg, #1678f2 3.73%, #65a8fb 132.69%)
+  );
+}
+.wrapper-schedule h2 {
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 2rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.text {
+  color: var(--color-white);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  padding: 1rem 8rem;
+  opacity: 0.8;
+  line-height: 1.5rem;
+}
+
+.appointment__smallBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 1rem 1.75rem;
+  background-color: var(--color-white);
+  border-radius: 6.25rem;
+  box-shadow: 0px 8px 23px 0px rgba(65, 132, 247, 0.24);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.appointment__smallBtn p {
+  font-family: var(--font-alt);
+  color: var(--color-primary) !important;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.app__appointment-doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14rem;
+}
+.app__appointment-doctor_img {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  margin-block: 1.5rem;
+}
+.app__appointment-doctor_img img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.play-btn {
+  width: 6.25rem;
+  height: 6.25rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  padding-left: 0.5rem;
+}
+.play-btn img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.app__appointment-doctor h2 {
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-size: 2rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.text2 {
+  color: var(--color-extra);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  padding: 1rem 8rem;
+  opacity: 0.8;
+  line-height: 1.5rem;
+}
+.appointment-container-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.appointment__bigBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: 0.75rem;
+  padding: 1rem 1.75rem;
+  background: var(
+    --gradients,
+    linear-gradient(145deg, #1678f2 3.73%, #65a8fb 132.69%)
+  );
+  border: none;
+  outline: none;
+}
+
+.appointment__bigBtn h3 {
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 1.125rem;
+  text-align: start;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1450px) {
+  .appointment__smallBtn p {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .appointment__smallBtn p {
+    font-size: 0.875rem !important;
+  }
+  .wrapper-schedule h2 {
+    font-size: 1.6rem;
+  }
+  .text {
+    padding: 1rem 6rem;
+  }
+  .appointment__bigBtn h3 {
+    font-size: 0.9375rem;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .wrapper-schedule {
+    padding: 3rem 2.2rem;
+  }
+  .text {
+    padding: 1rem 4rem;
+  }
+  .app__appointment-doctor {
+    margin-top: 10rem;
+  }
+  .app__appointment-doctor h2 {
+    font-size: 1.7rem;
+  }
+  .play-btn {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+  .play-btn img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .appointment-container-btn {
+    flex-direction: column;
+  }
+  .text2 {
+    padding: 1rem 6rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .wrapper-schedule h2,
+  .app__appointment-doctor h2 {
+    font-size: 1.5rem;
+  }
+  .wrapper-schedule {
+    padding: 3rem 2rem;
+  }
+  .app__appointment-doctor {
+    margin-top: 7rem;
+  }
+  .text {
+    padding: 1rem 0rem;
+    font-size: 0.875rem !important;
+  }
+  .text2 {
+    padding: 1rem 2rem;
+  }
+  .app__appointment {
+    padding-top: 6rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .app__appointment {
+    padding-top: 4rem;
+  }
+  .app__appointment-doctor {
+    mask-position: 4rem;
+  }
+  .app__appointment-container-schedule h4,
+  .app__appointment-doctor h4 {
+    font-size: 1rem;
+  }
+  .wrapper-schedule h2,
+  .app__appointment-doctor h2 {
+    font-size: 1.3rem;
+  }
+  .wrapper-schedule {
+    padding: 1.88rem 1.38rem;
+  }
+  .appointment__smallBtn p {
+    font-size: 0.875rem !important;
+  }
+  .text2 {
+    padding: 1rem 0;
+  }
+  .play-btn {
+    width: 2.11213rem;
+    height: 2.11213rem;
+    padding-left: 0.25rem;
+  }
+  .play-btn img {
+    width: 1.35175rem;
+    height: 1.35175rem;
+  }
+}

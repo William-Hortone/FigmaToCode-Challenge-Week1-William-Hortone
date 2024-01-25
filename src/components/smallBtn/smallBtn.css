@@ -1,6 +1,5 @@
 .app__smallBtn {
   display: flex;
-  /* width: 17.625rem; */
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
@@ -26,6 +25,16 @@
   }
 }
 @media screen and (max-width: 1250px) {
+  .app__smallBtn p {
+    font-size: 0.875rem !important;
+  }
+}
+@media screen and (max-width: 770px) {
+  .app__smallBtn p {
+    font-size: 0.675rem !important;
+  }
+}
+@media screen and (max-width: 550px) {
   .app__smallBtn p {
     font-size: 0.875rem !important;
   }

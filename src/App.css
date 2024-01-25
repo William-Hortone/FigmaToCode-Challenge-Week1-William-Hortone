@@ -1,13 +1,6 @@
 .section__padding {
   padding: 6rem 11.5rem;
 }
-
-/* @media screen and (min-width: 1350px) {
-  .section__padding {
-    padding: 6rem 9.5rem;
-    background-color: aqua;
-  }
-} */
 @media screen and (max-width: 1840px) {
   .section__padding {
     padding: 6rem 8.5rem;
@@ -26,20 +19,5 @@
 @media screen and (max-width: 650px) {
   .section__padding {
     padding: 4rem 2rem;
-  }
-  .p__cormorant {
-    font-size: 21px;
-  }
-
-  .p__opensans {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .p__opensans {
-    font-size: 12px;
-  }
-  .p__cormorant {
-    font-size: 19px;
   }
 }

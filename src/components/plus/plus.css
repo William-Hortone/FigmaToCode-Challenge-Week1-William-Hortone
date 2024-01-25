@@ -1,0 +1,6 @@
+.app__plus {
+  position: absolute;
+}
+.app__plus img {
+  object-fit: cover;
+}

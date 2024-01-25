@@ -4,15 +4,14 @@
   display: flex;
   flex-direction: column;
   background-color: var(--color-background);
-  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
   overflow-x: hidden;
+  box-shadow: 0 4px 6px -3px rgba(0, 0, 0, 0.3);
 }
 .app__services-header {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
-  /* background-color: rebeccapurple; */
   gap: 1.5rem;
 }
 .app__services-header-content {
@@ -49,7 +48,6 @@
   line-height: 1.5rem;
 }
 .app__services-header-img {
-  /* flex: 1; */
   width: 100%;
   aspect-ratio: 1/1;
 }
@@ -65,18 +63,14 @@
   display: flex;
   justify-content: center;
   padding-top: 4rem;
-  /* flex-direction: column; */
   align-items: flex-start;
   gap: 2.25rem;
 }
 .responsive-card {
   width: calc(100% - 1rem);
   margin-right: 1rem;
-  /* background-color: red; */
 }
-.container-carousel {
-  display: none;
-}
+
 @media screen and (max-width: 1250px) {
   .app__services-header {
     height: auto;
@@ -93,13 +87,9 @@
   .app__services-header {
     flex-direction: column-reverse;
     padding: 0;
-    /* align-items: center; */
-    /* gap: 1.5rem; */
   }
   .app__services-header-img {
-    /* flex: 1; */
-    width: 60%;
-    /* aspect-ratio: 1/1; */
+    width: 80%;
   }
   .app__services-header-content {
     align-items: center;
@@ -110,7 +100,6 @@
     align-self: flex-start;
   }
   .container-carousel {
-    display: flex;
     margin-top: 4rem;
   }
   .app__services-container {
@@ -122,7 +111,6 @@
 }
 @media screen and (max-width: 550px) {
   .container-carousel {
-    display: flex;
     margin-top: 4rem;
   }
   .app__services-header-content h2 {

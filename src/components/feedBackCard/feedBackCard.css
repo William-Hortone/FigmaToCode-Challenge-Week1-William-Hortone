@@ -1,0 +1,66 @@
+.app__feedBackCard {
+  width: 100%;
+  display: flex;
+  padding: 1.125rem 1.75rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  border-radius: 2rem;
+  background: #fff;
+  box-shadow: 0px 24px 32px -3px rgba(3, 9, 50, 0.04);
+}
+.card-text {
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  text-align: start !important;
+  padding: 0 !important;
+}
+.content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.content img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  background: url(), lightgray 50% / cover no-repeat;
+}
+.content div {
+  display: flex;
+  flex-direction: column;
+}
+.content div h4 {
+  color: var(--green, #00bfa5);
+  text-align: start;
+  font-family: var(--font-base);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.content div p {
+  color: var(--Second, #6c87ae);
+  text-align: start;
+  font-family: var(--font-alt);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 !important;
+  line-height: normal;
+}
+@media screen and (max-width: 550px) {
+  .card-text {
+    font-size: 0.875rem;
+  }
+  .content div h4 {
+    font-size: 1rem;
+  }
+  .content div p {
+    font-size: 0.6875rem;
+  }
+}

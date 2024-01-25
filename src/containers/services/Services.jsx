@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, SmallBtn } from "../../components";
 import { images } from "../../constants";
 import "./services.css";
@@ -6,24 +6,32 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const Services = () => {
+  const [isCarouselVisible, setIsCarouselVisible] = useState(
+    window.innerWidth <= 850
+  );
+
+  // The carousel for the responsive
   const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 850, min: 564 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 564, min: 0 },
       items: 1,
     },
   };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsCarouselVisible(window.innerWidth <= 850);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="app__services section__padding">
       <div className="app__services-header">
@@ -48,6 +56,7 @@ const Services = () => {
         </div>
       </div>
 
+      {/* Images for big resolution  */}
       <div className="app__services-container">
         <Card
           title="General"
@@ -81,59 +90,62 @@ const Services = () => {
         />
       </div>
 
-      <div className="container-carousel">
-        <Carousel responsive={responsive}>
-          <div className="responsive-card">
-            <Card
-              title="General"
-              img={images.docTool}
-              text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-          </div>
-          <div className="responsive-card">
-            <Card
-              title="Orthopedics"
-              img={images.ambulance}
-              text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-          </div>
-          <div className="responsive-card">
-            <Card
-              title="Nutritional"
-              img={images.image1}
-              text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-          </div>
-          <div className="responsive-card">
-            <Card
-              title="Cardiology"
-              img={images.healthy}
-              text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-          </div>
-          <div className="responsive-card">
-            <Card
-              title="Ophthalmology"
-              img={images.image3}
-              text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-          </div>
-          <div className="responsive-card">
-            <Card
-              title="Orthopedics"
-              img={images.ambulance}
-              text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-          </div>
-          <div className="responsive-card">
-            <Card
-              title="Orthopedics"
-              img={images.ambulance}
-              text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-          </div>
-        </Carousel>
-      </div>
+      {/* The carousel for the responsive */}
+      {isCarouselVisible && (
+        <div className="container-carousel">
+          <Carousel responsive={responsive}>
+            <div className="responsive-card">
+              <Card
+                title="General"
+                img={images.docTool}
+                text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+              />
+            </div>
+            <div className="responsive-card">
+              <Card
+                title="Orthopedics"
+                img={images.ambulance}
+                text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+              />
+            </div>
+            <div className="responsive-card">
+              <Card
+                title="Nutritional"
+                img={images.image1}
+                text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+              />
+            </div>
+            <div className="responsive-card">
+              <Card
+                title="Cardiology"
+                img={images.healthy}
+                text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+              />
+            </div>
+            <div className="responsive-card">
+              <Card
+                title="Ophthalmology"
+                img={images.image3}
+                text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+              />
+            </div>
+            <div className="responsive-card">
+              <Card
+                title="Orthopedics"
+                img={images.ambulance}
+                text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+              />
+            </div>
+            <div className="responsive-card">
+              <Card
+                title="Orthopedics"
+                img={images.ambulance}
+                text="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+              />
+            </div>
+          </Carousel>
+        </div>
+      )}
     </div>
   );
 };

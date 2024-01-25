@@ -5,8 +5,7 @@
   align-items: center;
   justify-content: center;
   background: #f9fbfc;
-  /* background: yellow; */
-  /* padding: 0 4rem; */
+  overflow-x: hidden !important;
 }
 .app__about-wrapper {
   display: flex;
@@ -14,31 +13,14 @@
   align-items: center;
   gap: 7.75rem;
   background-color: var(--color-white);
-  /* background-color: red; */
   padding: 0 2rem;
 }
 .app__about-img {
-  /* width: 100%;
-  flex: 1; */
-  /* padding-left: 4rem; */
-
-  /* width: 30.375rem; */
-  /* height: 25.3125rem; */
-  /* flex-shrink: 0; */
-  /* aspect-ratio: 1/1; */
-  /* flex: 1; */
-  /* width: 250px;
-  height: 100px; */
-  /* flex: 1; */
-  /* background-image: url("../../assets/plusicons.png"); */
   position: relative;
-  /* background: red; */
-  /* background-size: cover; */
-  /* background-color: rebeccapurple; */
+  /* background: #0a6694; */
 }
 .app__about-img img {
   width: 100%;
-  /* aspect-ratio: 1/1; */
   object-fit: cover;
   border-radius: 2rem;
 }
@@ -50,9 +32,6 @@
   align-items: flex-start;
   gap: 0.875rem;
   padding-left: 4rem;
-
-  /* background-color: rebeccapurple; */
-  /* width: 50%; */
 }
 
 .app__about-content h4 {
@@ -64,7 +43,6 @@
   line-height: normal;
   letter-spacing: 0.0275rem;
 }
-
 .app__about-content h2 {
   color: var(--color-black);
   font-family: var(--font-base);
@@ -84,11 +62,7 @@
 
 @media screen and (max-width: 1250px) {
   .app__about-wrapper {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     gap: 1.75rem;
-    /* background-color: var(--color-white); */
     padding: 0;
   }
   .app__about-img {
@@ -119,33 +93,19 @@
   .app__about-content {
     align-items: center;
   }
+  .app__about {
+    background-color: transparent;
+  }
 }
 @media screen and (max-width: 850px) {
   .app__about {
     height: auto;
     padding: 6rem 2rem;
-    /* background-color: aqua; */
-  }
-
-  .app__about-wrapper {
-    background: #f9fbfc;
   }
 }
 @media screen and (max-width: 550px) {
   .app__about-img {
-    /* width: 100%;
-    flex: 1; */
-    /* padding-left: 4rem; */
-
-    /* width: 20%; */
-  }
-  .app__about-img {
     width: 100%;
     height: auto;
-    /* aspect-ratio: 1/1; */
   }
-  /* .app__about {
-    padding: 0 4rem !important;
-    background-color: red;
-  } */
 }
